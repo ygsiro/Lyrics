@@ -84,8 +84,22 @@ main {
   /* 真っ黒より少しグレーにすると目に優しい */
 }
 
+/* 戻るリンクのスタイル */
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #888;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.back-link:hover {
+  color: #333;
+}
+
 @media print {
-  .controls {
-    display: none;
+  .no-print {
+    display: none !important;
   }
 }/*# sourceMappingURL=style.css.map */
