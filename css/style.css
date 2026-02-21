@@ -1,0 +1,91 @@
+@charset "UTF-8";
+l-ruby {
+  display: ruby;
+}
+
+l-rt {
+  display: ruby-text;
+  font-size: 0.5em;
+}
+
+.mode-vocal l-ruby {
+  display: inline;
+}
+.mode-vocal l-kanji {
+  display: none;
+}
+.mode-vocal l-rt {
+  display: inline;
+  font-size: 1rem;
+}
+
+l-sep {
+  display: none;
+}
+
+.mode-vocal l-sep {
+  display: inline-block;
+  font-weight: bold;
+  color: red;
+}
+
+l-vowel {
+  display: none;
+}
+
+.mode-vocal l-vowel {
+  display: inline-block;
+  font-weight: bold;
+  color: blue;
+}
+
+l-breath {
+  display: none;
+}
+
+.mode-vocal l-breath {
+  display: inline-block;
+  font-weight: bold;
+  color: green;
+}
+
+l-cho {
+  display: none;
+}
+
+.mode-vocal l-cho {
+  display: inline-block;
+  font-weight: bold;
+  color: purple;
+}
+
+.mode-vocal l-acc {
+  background-color: yellow;
+}
+
+section {
+  margin-top: 4em;
+}
+
+main {
+  margin: 0 auto;
+  width: 800px;
+  text-align: center;
+  /* フォントの指定 */
+  font-family: "Shippori Mincho", serif;
+  /* 歌詞カードっぽく見せるためのおすすめ設定 */
+  font-weight: 700;
+  /* 通常の太さ（強調したいなら700） */
+  line-height: 2.5;
+  /* 行間を広げて余韻を出す */
+  letter-spacing: 0.05em;
+  /* 字間をわずかに広げて読みやすく */
+  color: #333;
+  /* 真っ黒より少しグレーにすると目に優しい */
+}
+
+@media print {
+  .controls {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
